@@ -206,6 +206,40 @@
     color: var(--ink-soft);
   }
 
+  /* ——— RESEARCH FOCUS TAGS ——— */
+  .focus {
+    display: grid;
+    gap: 1.1rem;
+    max-width: 44em;
+    margin: 0.5rem 0 0 0;
+  }
+  .focus-label {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.5rem 0;
+  }
+  .focus-tags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .focus-tags li {
+    font-size: 0.82rem;
+    line-height: 1.35;
+    color: var(--ink-soft);
+    background: var(--surface);
+    border: 1px solid var(--line-soft);
+    border-radius: 999px;
+    padding: 0.28rem 0.75rem;
+  }
+
   .meta-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -415,6 +449,8 @@
       aspect-ratio: 3 / 3.8;
     }
 
+    .focus-tags li { font-size: 0.78rem; }
+
     .meta-grid {
       grid-template-columns: 1fr 1fr;
       gap: 1rem 1.5rem;
@@ -492,9 +528,31 @@
         <p class="lead">
           I am an associate fellow at TU Dortmund University and postdoc researcher in the Horizon Europe project ADAC.iO. My research interests are in strategic communication, disinformation, and the public sphere.
         </p>
-        <p>
-          With a background in strategic communication research and an interdisciplinary orientation, my research focuses on the contents and contexts of public discourse, information disorders, and the public sphere. I focus on qualitative methods.
-        </p>
+        <div class="focus">
+          <div class="focus-group">
+            <h3 class="focus-label">Research areas</h3>
+            <ul class="focus-tags">
+              <li>Mis- and Disinformation and foreign influence operations, and their conceptualisation</li>
+              <li>Strategic and organizational communication</li>
+              <li>Strategic narratives and framing</li>
+              <li>Conflicts of interest and organisational legitimacy</li>
+              <li>Complexity theory and multilevel analysis</li>
+              <li>Security, defence, and strategic communications</li>
+              <li>Foreign policy and international security</li>
+              <li>Emerging technologies in emergency management</li>
+              <li>Public sphere and democracy</li>
+            </ul>
+          </div>
+          <div class="focus-group">
+            <h3 class="focus-label">Methods</h3>
+            <ul class="focus-tags">
+              <li>Qualitative interview methods</li>
+              <li>Qualitative content analysis</li>
+              <li>Case study designs</li>
+              <li>Narrative analysis</li>
+            </ul>
+          </div>
+        </div>
 
         <dl class="meta-grid">
           <div>
